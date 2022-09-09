@@ -34,3 +34,15 @@ ON e.emp_no = t.emp_no
 WHERE (e.birth_date BETWEEN '1965-01-01'AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
+
+-- count titles in departments 
+SELECT DISTINCT ON(u.title, d.dept_name) 
+	u.title, d.dept_name, count(u.title)
+FROM unique_titles as u
+INNER JOIN dept_emp as de
+ON u.emp_no = de.emp_no
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+Group by u.title, d.dept_name
+order by d.dept_name;
+
