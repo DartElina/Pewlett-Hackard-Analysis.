@@ -6,19 +6,26 @@ It has come to the attention of the leaders at Pewlett Hackard that they have a 
 ## Results: 
 The code for the full analysis is available here: ![Link to view sql file used.](https://github.com/DartElina/Pewlett-Hackard-Analysis./blob/c5d9854be4e8e54b920c944574a902d7d7ecb00e/Pewlett-Hackard-Analysis./Employee_Database_challenge.sql)
 
-Initially we imported all the excel spreadsheets that Pewlett Hackard used to store data on their employees. We needed to identify how many employees were of or approaching retiring age. 
+Initially we imported all the excel spreadsheets that Pewlett Hackard used to store data on their employees. 
+
+- We needed to identify how many employees were of or approaching retiring age. 
 
 ![retirement_titles](https://github.com/DartElina/Pewlett-Hackard-Analysis./blob/a2b447af748bb7b6125bf5360adeb2db0e76113a/Pewlett-Hackard-Analysis./retirement_titles.png)
 
-We produced this table. As you can see employee numbers are repeating because many employees have been promoted and so they appear again for each new title. We created a new "unique titles" table to show employees in their current positions only. 
+We produced this table. As you can see employee numbers are repeating because many employees have been promoted and so they appear again for each new title. 
+
+- We created a new "unique titles" table to show employees in their current positions only. 
 
 ![unique_titles](https://github.com/DartElina/Pewlett-Hackard-Analysis./blob/a2b447af748bb7b6125bf5360adeb2db0e76113a/Pewlett-Hackard-Analysis./unique_titles.png)
 
-We have 72,458 current employees approaching retirement age. We need to identify their titles, and their departments. Since we need to hire to fill these positions. We made a table counting how many titles of each name need filling. The result was 7 unique titles for 72,458 individuals. 
+- We have 72,458 current employees approaching retirement age. We need to identify their titles, and their departments. Since we need to hire to fill these positions. 
+- We made a table counting how many titles of each name need filling. The result was 7 unique titles for 72,458 individuals. 
 
 ![retirning_titles](https://github.com/DartElina/Pewlett-Hackard-Analysis./blob/8cae0f7d6963a7ea7c282a70d8f12c0d85f61123/Pewlett-Hackard-Analysis./retiring_count_titles.png)
 
-With over 72,000 people retiring soon a plan must be made to train and replace these team members. Perhaps a mentorship program in which retirees reduce their work hours and mentor the next generation of senior engineers, and managers. Here is a table consisting of mature professionals. 
+With over 72,000 people retiring soon a plan must be made to train and replace these team members. Perhaps a mentorship program in which retirees reduce their work hours and mentor the next generation of senior engineers, and managers. 
+
+- Here is a table consisting of mature professionals. 
 
 ![mentorship_eligible](https://github.com/DartElina/Pewlett-Hackard-Analysis./blob/a2b447af748bb7b6125bf5360adeb2db0e76113a/Pewlett-Hackard-Analysis./mentor_eligible.png)
 
