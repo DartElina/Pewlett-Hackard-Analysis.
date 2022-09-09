@@ -45,4 +45,13 @@ INNER JOIN departments as d
 ON de.dept_no = d.dept_no
 Group by u.title, d.dept_name
 order by d.dept_name;
-
+-- mentorship eligible by department 
+SELECT DISTINCT ON(m.title, d.dept_name) 
+	m.title, d.dept_name, count(m.title)
+FROM mentorship_eligible as m
+INNER JOIN dept_emp as de
+ON m.emp_no = de.emp_no
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+Group by m.title, d.dept_name
+order by d.dept_name;
